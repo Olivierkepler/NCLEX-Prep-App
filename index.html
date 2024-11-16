@@ -3,14 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="output.css" rel="stylesheet">
-
-  <title>NCLEX Prep App ME</title>
+  <title>NCLEX Prep</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-center p-6">
-    <h1 class="text-4xl font-bold text-blue-500">Welcome me ER  MTto the NCLEX Prep App</h1>
-    <p class="text-gray-700 mt-4">Your journey to success starts here.</p>
-</body>
 
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+  <!-- Header Section -->
+  <header class="bg-blue-600 text-white py-6 shadow-lg">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">NCLEX Prep</h1>
+      <nav>
+        <a href="#features" class="text-white hover:text-gray-200 mx-2">Features</a>
+        <a href="#quiz" class="text-white hover:text-gray-200 mx-2">Quiz</a>
+        <a href="#footer" class="text-white hover:text-gray-200 mx-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-blue-600">Welcome to NCLEX Prep</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        Your ultimate platform to ace the NCLEX exam with interactive quizzes and real-time feedback.
+      </p>
+      <button class="mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition">
+        Get Started
+      </button>
+    </div>
+  </section>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 mt-8">
+      <!-- Initial Quiz Section -->
+      <div id="quiz-intro" class="text-center">
+        <h2 class="text-3xl font-bold text-blue-600">Practice Quiz</h2>
+        <p class="text-gray-600 mt-4">Test your knowledge and see how prepared you are.</p>
+        <button id="start-quiz" class="mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition">
+          Start Quiz
+        </button>
+      </div>
+    </main>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center text-gray-800">Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-blue-600">Interactive Quizzes</h4>
+          <p class="mt-2 text-gray-600">
+            Test your knowledge with practice questions and receive instant feedback.
+          </p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-blue-600">Progress Tracking</h4>
+          <p class="mt-2 text-gray-600">
+            Monitor your strengths and weaknesses with detailed analytics.
+          </p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-blue-600">Comprehensive Resources</h4>
+          <p class="mt-2 text-gray-600">
+            Access study guides, flashcards, and tips to enhance your prep.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-gray-800">Practice Quiz</h3>
+      <p class="mt-4 text-gray-600">
+        Take a quick quiz to test your knowledge and see how prepared you are.
+      </p>
+      <button class="mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition">
+        Start Quiz
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 NCLEX Prep. All Rights Reserved.</p>
+      <p class="mt-2">Designed with ❤️ by Olivier</p>
+    </div>
+  </footer>
+ <script src="script.js"></script>
+</body>
 </html>
